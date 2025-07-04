@@ -1,0 +1,41 @@
+nav {
+    background-color: rgb(185, 151, 14);
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#nav-logo {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 60px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#home {
+    margin-top: 60px;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    height: 60px;
+    width: 60px
+}
