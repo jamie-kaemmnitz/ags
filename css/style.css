@@ -144,3 +144,61 @@ p {
     color: rgb(31, 55, 74);
 }
 
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid rgb(185, 151, 14); /* AGS Gold */
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(31, 55, 74);
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid rgb(129, 103, 0); /* Highlight on focus */
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: rgb(129, 103, 0);
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(102, 82, 0);
+}
