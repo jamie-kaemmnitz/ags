@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    scroll-padding-top: 90px;
 }
 
 
@@ -24,8 +25,9 @@ nav {
 #nav-logo {
     margin: 0;
     padding: 0;
-    height: auto;
-    width: 60px;
+    height: 40px;
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-list {
@@ -73,7 +75,72 @@ nav {
     max-width: 800px;
 }
 
-img {
-    height: 60px;
-    width: 60px
+#services {
+    padding-bottom: 40px;
 }
+
+#services-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#services-list div {
+    margin: 20px;
+    border: 2px solid rgb(185, 151, 14);
+    padding: 20px;
+    box-sizing: border-box;
+    height: 220px;
+}
+
+.bifold-images,
+.roof-lantern-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+.bifold-images img,
+.roof-lantern-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid rgb(185, 151, 14);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact-details p {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 60px;
+    color: rgb(185, 151, 14);
+}
+
+h5 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(31, 55, 74);
+}
+
+h6 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(31, 55, 74);
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(31, 55, 74);
+}
+

@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <img src="images/ags-logo.jpg" alt="picture of ags logo">
+            <img id="nav-logo" src="images/ags-logo.jpg" alt="picture of ags logo">
             <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -30,7 +30,7 @@
             <p>With over 20 years experience in the industry our team are proud to provide the highest standard of work with top customer service.</p>
             <p>We are based in South East and cover all surrounding areas including Kent, Essex and Surrey.</p>
         </div>
-        <section>
+        <section id="services-list">
             <div>
                 <h4>What we fit:</h4>
                 <ul>
@@ -55,7 +55,7 @@
     <section id="gallery">
         <h2>Gallery</h2>
         <p><em>Below are some images of our previous work</em></p>
-        <div>
+        <div class="bifold-images">
             <h5>Bifolding Doors</h5>
             <img src="images/bifold-doors/bifold-one.jpg" alt="bifolding doors image one">
             <img src="images/bifold-doors/bifold-two.jpg" alt="bifolding doors image two">
@@ -75,7 +75,7 @@
             <img src="images/bifold-doors/bifold-sixteen.jpg" alt="bifolding doors image sixteen">
             <img src="images/bifold-roof-lantern/bifold-roof-one.jpg" alt="bifolding doors image seventeen">
         </div>
-        <div>
+        <div class="roof-lantern-images">
             <h5>Roof Lanterns</h5>
             <img src="images/roof-lanterns/roof-lantern-one.jpg" alt="roof lantern image one">
             <img src="images/roof-lanterns/roof-lantern-two.jpg" alt="roof lantern image two">
@@ -89,7 +89,7 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <p>For a free no obligation quote please contact us via email, phone or by filling in the enquiry form below.</p>
-        <div>
+        <div class="contact-details">
             <h6>Contact Details</h6>
             <p>Ryan - 07394 130378</p>
             <p>Chris - 07921 825538</p>
@@ -98,6 +98,7 @@
         </div>
         <div>
             <form>
+                <h6>Enquiry Form</h6>
                 <div>
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="enter name" required>
@@ -128,6 +129,9 @@
                 <div>
                 <label for="desciption">Description</label>
                 <textarea id="description" name="description" rows="10" placeholder="please describe your enquiry here" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send Enquiry</button>
                 </div>
             </form>
         </div>
