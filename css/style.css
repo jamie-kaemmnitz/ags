@@ -334,3 +334,148 @@ button[type="submit"]:hover {
     }
 
 }
+
+@media (min-width: 1025px) {
+
+    html, body {
+        scroll-padding-top: 150px; /* Adjust for fixed nav height */
+    }
+
+    nav {
+        height: 80px;
+    }
+
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #nav-logo {
+        height: 60px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    #home img {
+        height: 250px;
+        width: auto;
+        margin: 20px;
+    }
+
+    .nav-list {
+        flex-grow: 1;              /* fill remaining space next to logo */
+        display: flex;
+        justify-content: flex-end; /* align nav links to right */
+        gap: 40px;                 /* space between links */
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        font-size: 1.5rem;
+    }
+
+    #services-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    #services {
+        padding-bottom: 60px;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #services-list div {
+        margin: 40px;
+        padding: 40px;
+        height: 440px;
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    .bifold-images,
+    .roof-lantern-images {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .bifold-images img,
+    .roof-lantern-images img {
+        width: 100%;
+        height: 420px;
+    }
+
+    .bifold-images-shown,
+    .bifold-images-more-images,
+    .roof-lantern-images-shown,
+    .roof-lantern-more-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 👈 3 images per row */
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #see-more-bifold,
+    #see-more-roof-lantern {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        background-color: rgb(129, 103, 0);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    h5{
+        font-size: 1.5rem;
+    }
+
+    #contact {
+        margin-top: 120px;
+        height: 100%;
+    }
+
+    .contact-details {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .contact-details p {
+        font-size: 1.4rem;
+        line-height: 2.6;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 80px;
+    }
+
+    h5 {
+        font-size: 1.8rem;
+    }
+
+    h6 {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        width: 85%;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+}
