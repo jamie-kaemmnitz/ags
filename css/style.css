@@ -45,6 +45,16 @@ nav {
     padding: 0 20px;
 }
 
+.nav-list a {
+  color: floralwhite;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-list a.highlight {
+  color: rgb(31, 55, 74); /* highlight color */
+}
+
 #home {
     margin-top: 120px;
     height: 100%;
@@ -123,6 +133,10 @@ nav {
 
 .hidden {
     display: none;
+}
+
+#contact {
+    margin-top: 80px;
 }
 
 .contact-details p {
@@ -479,24 +493,81 @@ button[type="submit"]:hover {
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 2.2rem;
         margin-bottom: 80px;
     }
 
     h5 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     h6 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-bottom: 40px;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         width: 85%;
         margin: 0 auto;
         line-height: 1.6;
     }
+}
 
+@media  (max-width: 767px) {
+    html, body {
+        scroll-padding-top: 60px;
+        overflow-x: hidden;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1001;
+        background-color: transparent; /* ← if you want no background */
+        margin-left: auto;
+        position: relative;
+        right: 0;
+        padding-right: 20px;
+    }
+
+    .hamburger span {
+        width: 25px;
+        height: 3px;
+        background-color: floralwhite;
+        border-radius: 2px;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: rgb(184, 148, 2); /* dark background for dropdown */
+        padding: 10px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        max-width: 90vw;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* ← important! */
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    #nav-logo {
+        padding-left: 20px;
+    }
 }
