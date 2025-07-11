@@ -83,21 +83,24 @@ nav {
 #services-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
 }
 
 #services-list div {
-    flex: 1 1 40%; /* Flex-grow, flex-shrink, and base width */
+    flex: 1 1 70%; /* Flex-grow, flex-shrink, and base width */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 20px;
     border: 2px solid rgb(185, 151, 14);
     padding: 20px;
     box-sizing: border-box;
-    max-width: 40%;
+    max-width: 70%;
+    line-height: 1.5;
 }
 
 .bifold-images,
