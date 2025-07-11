@@ -82,17 +82,22 @@ nav {
 
 #services-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     margin-top: 20px;
 }
 
 #services-list div {
+    flex: 1 1 40%; /* Flex-grow, flex-shrink, and base width */
+    display: flex;
+    flex-direction: column;
     margin: 20px;
     border: 2px solid rgb(185, 151, 14);
     padding: 20px;
     box-sizing: border-box;
-    height: 220px;
+    max-width: 40%;
 }
 
 .bifold-images,
@@ -282,12 +287,21 @@ button[type="submit"]:hover {
         margin: 0 auto;
     }
 
+    #services-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: stretch;
+        margin-top: 20px;
+    }
+
     #services-list div {
+        flex: 1 1 35%;
         margin: 40px;
         padding: 40px;
-        height: 350px;
-        width: 45%;
         font-size: 1.6rem;
+        max-width: 40%;
     }
 
     #see-more-bifold,
@@ -391,11 +405,14 @@ button[type="submit"]:hover {
     }
 
     #services-list div {
+        flex: 1 1 25%;
         margin: 40px;
         padding: 40px;
         height: 440px;
         font-size: 1.6rem;
         line-height: 1.4;
+        align-items: center;
+        max-width: 30%;
     }
 
     .bifold-images,
