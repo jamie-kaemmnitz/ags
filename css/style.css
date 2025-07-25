@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-list a {
-  color: floralwhite;
+  color: rgb(31, 55, 74);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -230,6 +230,23 @@ button[type="submit"]:hover {
   background-color: rgb(102, 82, 0);
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(129, 103, 0); /* Your gold tone */
+    color: white;
+    text-align: center;
+    padding: 5px 0;         /* Reduced vertical padding */
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem; /* Smaller font size */
+    text-align: center;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
     html, body {
@@ -266,8 +283,9 @@ button[type="submit"]:hover {
     }
 
     #home {
-        margin-top: 220px;
+        margin: 240px 0;
         height: 100%;
+        padding-bottom: 150px;
     }
 
     #home img {
@@ -302,6 +320,10 @@ button[type="submit"]:hover {
         font-size: 1.5rem;
         width: 80%;
         margin: 0 auto;
+    }
+
+    #services {
+        margin: 240px 0;
     }
 
     #services-list {
@@ -371,6 +393,27 @@ button[type="submit"]:hover {
 
     html, body {
         scroll-padding-top: 150px; /* Adjust for fixed nav height */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .page-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    form {
+        margin-bottom: 60px; /* prevent footer collision */
     }
 
     nav {
@@ -512,12 +555,37 @@ button[type="submit"]:hover {
         margin: 0 auto;
         line-height: 1.6;
     }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(129, 103, 0); /* Your gold tone */
+        color: white;
+        text-align: center;
+        padding: 5px 0;         /* Reduced vertical padding */
+        width: 100%;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 0.9rem; /* Smaller font size */
+        text-align: center;
+    }
 }
 
 @media  (max-width: 767px) {
     html, body {
         scroll-padding-top: 60px;
         overflow-x: hidden;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #home {
+        padding: 60px 0;
     }
 
     .hamburger {
@@ -563,7 +631,7 @@ button[type="submit"]:hover {
         align-items: center;
         justify-content: space-between; /* ← important! */
         padding: 0;
-        position: relative;
+        position: fixed;
         width: 100%;
     }
 
